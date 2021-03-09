@@ -14,10 +14,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Node 12
-        uses: actions/setup-node@v2.1.5
+      - uses: actions/setup-node@v2.1.5
         with:
-          node-version: '12'
-      - name: Install Dependencies
-        run: |-
-          yarn install --frozen-lockfile
+          node-version: '14'
+      - run: yarn install --frozen-lockfile
