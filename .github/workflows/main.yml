@@ -4,10 +4,6 @@ on:
   issue_comment:
     types:
       - created
-  pull_request:
-    branches: [main, release]
-  push:
-    branches: [main, release]
 
 jobs:
   build:
